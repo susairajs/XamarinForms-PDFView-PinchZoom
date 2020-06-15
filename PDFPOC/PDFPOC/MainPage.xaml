@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:controls="clr-namespace:PDFPOC.Controls"
+             mc:Ignorable="d"
+             x:Class="PDFPOC.MainPage">
+
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <Button Text="Pdfview" Clicked="Button_Clicked"/>
+        <Button Text="Pdfview1" Clicked="Button_Clicked_1"/>
+        <!--<controls:PDFView x:Name="pdfView"  HeightRequest="1000"  
+             WidthRequest="1000"  
+               
+             VerticalOptions="FillAndExpand"  />-->
+        <!-- Place new controls here -->
+        <!--<WebView HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Source="https://download.xamarin.com/developer/xamarin-forms-book/XamarinFormsBook-Ch01-Apr2016.pdf"/>-->
+        <!--<WebView Source="http://xamarin.com" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+/>-->
+        <!--<WebView x:Name="webView"  
+             HeightRequest="1000"  
+             WidthRequest="1000"  
+               
+             VerticalOptions="FillAndExpand"/>-->
+    </StackLayout>
+
+</ContentPage>

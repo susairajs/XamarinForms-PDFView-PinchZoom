@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+              xmlns:controls="clr-namespace:PDFPOC.Controls"
+             mc:Ignorable="d"
+             x:Class="PDFPOC.PDFViewer">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Green" 
+                     HorizontalOptions="CenterAndExpand" 
+                     VerticalOptions="CenterAndExpand">
+            <controls:PDFView x:Name="pdfView"  
+                              IsPDF="True" 
+                              HeightRequest="1000"
+                              WidthRequest="1000"
+                              VerticalOptions="FillAndExpand"  />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
