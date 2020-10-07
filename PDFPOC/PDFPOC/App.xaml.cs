@@ -10,7 +10,7 @@ namespace PDFPOC
         {
             InitializeComponent();
 
-            MainPage = new PDFViewer();
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()

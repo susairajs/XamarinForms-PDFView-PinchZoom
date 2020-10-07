@@ -29,7 +29,7 @@ namespace PDFPOC.Droid
 
             if (e.NewElement != null)
             {
-
+                Element.Navigated += Element_Navigated;
 
                 var pdfView = Element as PDFView;
                 Control.Settings.AllowUniversalAccessFromFileURLs = true;
@@ -45,6 +45,14 @@ namespace PDFPOC.Droid
                     Control.LoadUrl(pdfView.Uri);
                 }
 
+            }
+        }
+
+        private void Element_Navigated(object sender, WebNavigatedEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(Control.Title))
+            {
+                Control.Reload();
             }
         }
     }
